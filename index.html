@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+        <h1>Opinion hub</h1>
+    </header>
+    <main>
+        <div class="container-form">
+            <form action="php/sign-up.php" method="post">
+                <div class="container__p">
+
+                    <div id="container__info">
+                        <div id="info">
+                            <div id="info__sn">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div id="info__sn">
+                                <label for="surname">Surname</label>
+                                <input type="text" name="surname" id="surname">
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                    <div id="container__sex">
+                        <div id="sex">
+                            <div id="sex__label">
+                                <label for="sex">Sex</label>
+                            </div>
+                            <div id="sex__radio">
+                                <div id="radio__male">
+                                    <input type="radio" name="sex" id="male" value="male">    
+                                    <label for="male">Male</label>
+                                </div>
+                                <div id="radio__female">
+                                    <input type="radio" name="sex" id="female" value="female">    
+                                    <label for="female">Female</label>
+                                </div>
+                                <div id="radio__other">
+                                    <input type="radio" name="sex" id="other" value="other">        
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container__next">
+                        <div id="next">Next</div>
+                    </div>
+                </div>
+                
+                <div class="container__s">
+                    
+                    <label for="mail">Mail</label>
+                    <input type="email" name="mail" id="mail">
+                    
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                    
+                    <label for="nickname">Nickname</label>
+                    <input type="text" name="nickname" id="nickname">
+                    
+            
+                    <label for="job">Job</label>
+                    <input type="text" name="job" id="job">
+
+                    <button type="submit">Submit</button>
+
+                </div>
+    
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap');
+
+:root{
+    --form-width:600px;
+    --form-height:500px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #0B0C1B;
+}
+
+header{
+    height: 10%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    color: black;
+}
+
+main{
+    width: 100%;
+    height: 90%;
+}
+
+.container-form{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+
+.container-form form{
+    border: 1px solid black;
+    width: var(--form-width);
+    height: var(--form-height);
+
+    position: relative;
+    top: calc(50% - var(--form-height)/2);
+    left: calc(50% - var(--form-width)/2);
+    
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.container__p, .container__s{
+    min-width: 100%;
+    height: 100%;
+}
+
+/*************************First-form-div***************************/
+
+.container__p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid white;
+}
+
+#info{
+    border: 1px solid red;
+    
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+#info__sn{
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #surname{
+    background-color: #ffffff00;
+    border: 1px solid white;
+}
+
+#sex{
+    border: 1px solid green;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sex__label{
+    position: relative;
+    left: 19.5%;
+}
+
+#sex__radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10.2%;
+}
+
+#radio__male, #radio__female, #radio__other{
+    position: relative;
+    right: 6%;
+}
+
+.container__next{
+    border: 1px solid pink;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#next{
+    width: 110px;
+    height: 41px;
+    background-color: #087CA7;
+    border-radius: 10px;
+    margin-right: 10%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
