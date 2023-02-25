@@ -2,8 +2,9 @@
 
 :root{
     --form-width:600px;
-    --form-height:500px;
-
+    --form-height:550px;
+    --submit-width:110px;
+    --submit-height:41px;
 }
 
 *{
@@ -41,7 +42,7 @@ main{
 }
 
 .container-form form{
-    border: 1px solid black;
+    background-color: #0f1022;
     width: var(--form-width);
     height: var(--form-height);
 
@@ -50,35 +51,41 @@ main{
     left: calc(50% - var(--form-width)/2);
     
     border-radius: 30px;
-
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
+} 
 
 .container__p, .container__s{
     min-width: 100%;
-    height: 100%;
+}
+
+.container__p{
+    height: 35%;
+}
+.container__s{
+    height: 65%;
 }
 
 /*************************First-form-div***************************/
 
-.container__p{
+ /* .container__p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid white;
+} */
+
+#container__info{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
 }
 
 #info{
-    border: 1px solid red;
-    
-    width: 100%;
-    height: 40%;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
+    gap: 27%;
 }
 
 #info__sn{
@@ -86,38 +93,38 @@ main{
     flex-direction: column;
 }
 
-#name, #surname{
+input[type=text], input[type=password], input[type=email]{
     background-color: #ffffff00;
     border: 1px solid white;
+    border-radius: 5px;
+}
+
+#container__sex{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
 }
 
 #sex{
-    border: 1px solid green;
-    width: 100%;
-    height: 40%;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-
-#sex__label{
-    position: relative;
-    left: 19.5%;
 }
 
 #sex__radio{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 10.2%;
-}
-
-#radio__male, #radio__female, #radio__other{
-    position: relative;
-    right: 6%;
+    gap: 20%;
 }
 
 .container__next{
-    border: 1px solid pink;
+    display: none;
+}
+
+/*
+.container__next{
     width: 100%;
     height: 20%;
     position: absolute;
@@ -137,4 +144,61 @@ main{
     display: grid;
     justify-items: center;
     align-items: center;
+} */
+
+/*************************Second-form-div***************************/
+
+.container__s{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#c__mail, #c__nickname{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#mail, #nickname, #pwd, #c_pwd, #job{
+    width: 80%;
+}
+
+.container__password{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.job{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit{
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button[type=submit]{
+    background-color: #087CA7;
+    border: none;
+    border-radius: 10px;
+    width: var(--submit-width);
+    height: var(--submit-height);
+}
+
+@media only screen and (max-width:390px){
+    .container-form{
+        
+    }
 }
